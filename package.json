@@ -1,0 +1,30 @@
+{
+    "name": "express-graphql-server",
+    "version": "1.0.0",
+    "description": "Express GraphQL server",
+    "main": "index.js",
+    "scripts": {
+        "start": "node src/index.js",
+        "test": "eslint src/**"
+    },
+    "keywords": [
+        "express",
+        "graphql"
+    ],
+    "author": "Maria Santos",
+    "license": "MIT",
+    "devDependencies": {
+        "@babel/preset-env": "^7.4.3",
+        "rimraf": "^2.6.2"
+    },
+    "dependencies": {
+        "body-parser": "^1.18.3",
+        "cors": "^2.8.5",
+        "express": "^4.16.4",
+        "express-graphql": "^0.7.1",
+        "graphql": "^14.2.1",
+        "graphql-tools": "^4.0.4",
+        "merge-graphql-schemas": "^1.5.8",
+        "scan-dir-recursive": "^1.0.11"
+    }
+}

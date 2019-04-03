@@ -1,0 +1,69 @@
+{
+	"info": {
+		"_postman_id": "ac7e63da-58e1-402e-831b-ecf9c7677272",
+		"name": "express-grapqhl-server",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get - hello",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"query\": \"query{ hello { message } }\"\n}"
+				},
+				"url": {
+					"raw": "{{BASE_URL}}:{{HTTP_PORT}}/graph/hello",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"port": "{{HTTP_PORT}}",
+					"path": [
+						"graph",
+						"hello"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post - hi",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"query\": \"mutation{ hi(name: \\\"maria\\\" ) { message } }\"\n}"
+				},
+				"url": {
+					"raw": "{{BASE_URL}}:{{HTTP_PORT}}/graph/hi",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"port": "{{HTTP_PORT}}",
+					"path": [
+						"graph",
+						"hi"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

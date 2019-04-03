@@ -1,0 +1,13 @@
+{
+    "presets": [
+        ["@babel/env", {
+            "targets" : {
+                "node": 10
+            },
+            "modules": "commonjs"
+        }]
+    ],
+    "plugins": [
+        "dynamic-import-node"
+    ]
+}

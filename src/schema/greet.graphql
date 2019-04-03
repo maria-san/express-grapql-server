@@ -1,0 +1,20 @@
+
+type Greet {
+
+    message: String
+
+}
+
+type Query {
+
+    hello: Greet
+
+}
+
+type Mutation {
+
+    hi(
+        name: String
+    ): Greet
+
+}
